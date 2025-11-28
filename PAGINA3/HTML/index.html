@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Blog UX Inmersiva - VUI / NUI / VR-AR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="imagenes/favicon.png  ">
+
+  <!-- Framework CSS (ya los tienes en tu carpeta) -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- ================= HEADER ================= -->
+    <div class="row" style="margin-top: 3rem;">
+      <div class="eight columns">
+        <h1>Blog UX Inmersiva</h1>
+        <h5>VUI · NUI · VR / AR</h5>
+        <p>
+          Un espacio para aprender sobre el uso de herramientas de diseño y desarrollo
+          para <strong>interfaces de voz (VUI)</strong>, <strong>interfaces naturales (NUI)</strong>
+          y experiencias inmersivas de <strong>Realidad Virtual y Aumentada (VR/AR)</strong>.
+        </p>
+      </div>
+      <div class="four columns">
+        <h6>Menú rápido</h6>
+        <a href="#articulos" class="button button-primary u-full-width">Ir a artículos</a>
+        <a href="#tabla-herramientas" class="button u-full-width">Ver tabla de herramientas</a>
+        <a href="#boletin" class="button u-full-width">Suscribirse al boletín</a>
+      </div>
+    </div>
+
+    <!-- ================= NAV CON BOTONES ================= -->
+    <div class="row">
+      <div class="twelve columns">
+        <a href="#vui" class="button button-primary">VUI</a>
+        <a href="#nui" class="button">NUI</a>
+        <a href="#vrar" class="button">VR / AR</a>
+        <a href="#recursos" class="button">Recursos</a>
+        <a href="#contacto" class="button">Contacto</a>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- ================= CONTENIDO PRINCIPAL + SIDEBAR ================= -->
+    <div class="row" id="articulos">
+
+      <!-- COLUMNA PRINCIPAL -->
+      <div class="eight columns">
+
+        <!-- ===== POST VUI ===== -->
+        <section id="vui">
+          <h2>Diseñando experiencias con VUI (Voice User Interfaces)</h2>
+          <p><em>Publicado el 25 de noviembre de 2025 · Categoría: VUI</em></p>
+
+          <p>
+            Las <strong>VUI</strong> permiten que el usuario interactúe con sistemas
+            mediante <strong>comandos de voz</strong>. Son la base de asistentes
+            como Alexa, Google Assistant o Siri, y se apoyan en
+            <code>NLU</code> (Natural Language Understanding) para interpretar la intención.
+          </p>
+
+          <h4>Flujo básico de una VUI</h4>
+          <ol>
+            <li>El usuario pronuncia un comando o pregunta.</li>
+            <li>El sistema captura el audio y lo convierte a texto.</li>
+            <li>El motor de NLU interpreta la intención.</li>
+            <li>Se ejecuta una acción o se responde con voz / audio.</li>
+          </ol>
+
+          <h5>Buenas prácticas clave</h5>
+          <ul>
+            <li>Diseñar diálogos <strong>claros</strong> y <strong>cortos</strong>.</li>
+            <li>Confirmar acciones críticas con preguntas de verificación.</li>
+            <li>Ofrecer siempre una opción de <em>ayuda</em> o <em>repetir</em>.</li>
+            <li>Definir respuestas para cuando el sistema no entiende al usuario.</li>
+          </ul>
+
+          <h6>Ejemplo de pseudo-código de un intent</h6>
+          <pre><code>
+// Intent: obtener_horario_clases
+if (intencion === "obtener_horario_clases") {
+  responder("Tu próxima clase de VR es hoy a las 16:00.");
+}
+          </code></pre>
+
+          <hr>
+        </section>
+
+        <!-- ===== POST NUI ===== -->
+        <section id="nui">
+          <h2>Interfaces Naturales (NUI): gestos y movimiento</h2>
+          <p><em>Publicado el 22 de noviembre de 2025 · Categoría: NUI</em></p>
+
+          <p>
+            Las <strong>NUI</strong> buscan que el usuario interactúe con gestos,
+            movimientos, miradas o incluso posturas. La idea es que el control sea
+            lo más <strong>natural</strong> posible, reduciendo la dependencia de
+            dispositivos tradicionales.
+          </p>
+
+          <h4>Elementos típicos en NUI</h4>
+          <ul>
+            <li>Cámaras de profundidad o sensores de movimiento.</li>
+            <li>Reconocimiento de <strong>gestos</strong> con manos y brazos.</li>
+            <li>Seguimiento de mirada (<em>eye tracking</em>).</li>
+            <li>Detección de postura corporal.</li>
+          </ul>
+
+          <p>
+            Es importante evitar la <strong>fatiga física</strong> del usuario.
+            Gestos pequeños y precisos suelen ser más cómodos que movimientos muy amplios.
+          </p>
+
+          <blockquote>
+            “Una NUI exitosa es aquella que casi desaparece: el usuario se enfoca en la tarea,
+            no en aprender a usar la interfaz.”
+          </blockquote>
+
+          <hr>
+        </section>
+
+        <!-- ===== POST VR/AR ===== -->
+        <section id="vrar">
+          <h2>VR / AR: herramientas para experiencias inmersivas</h2>
+          <p><em>Publicado el 18 de noviembre de 2025 · Categoría: VR / AR</em></p>
+
+          <p>
+            La <strong>Realidad Virtual (VR)</strong> sumerge al usuario en un mundo
+            completamente digital, mientras que la <strong>Realidad Aumentada (AR)</strong>
+            superpone elementos virtuales sobre el entorno real.
+          </p>
+
+          <h4>Consideraciones de diseño en VR / AR</h4>
+          <ul>
+            <li>Evitar movimientos bruscos de cámara para reducir mareos.</li>
+            <li>Mantener una escala coherente de objetos en el entorno.</li>
+            <li>Garantizar buena legibilidad de texto dentro del espacio 3D.</li>
+            <li>Respetar la distancia cómoda entre el usuario y los elementos interactivos.</li>
+          </ul>
+
+          <p>
+            También es esencial pensar en la <strong>accesibilidad</strong>:
+            ¿qué pasa con usuarios que no pueden usar ambos controladores?
+            ¿O que necesitan una interfaz alternativa?
+          </p>
+
+          <hr>
+        </section>
+
+        <!-- ===== TABLA DE HERRAMIENTAS ===== -->
+        <section id="tabla-herramientas">
+          <h2>Tabla comparativa de herramientas</h2>
+          <p>
+            A continuación, una vista rápida de algunas herramientas usadas para
+            VUI, NUI y VR/AR.
+          </p>
+
+          <table class="u-full-width">
+            <thead>
+              <tr>
+                <th>Herramienta</th>
+                <th>Tipo</th>
+                <th>Uso principal</th>
+                <th>Plataforma</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Alexa Developer Console</td>
+                <td>VUI</td>
+                <td>Creación de skills de voz.</td>
+                <td>Web</td>
+              </tr>
+              <tr>
+                <td>Dialogflow</td>
+                <td>VUI / Chatbot</td>
+                <td>Diseño de diálogos y bots conversacionales.</td>
+                <td>Web</td>
+              </tr>
+              <tr>
+                <td>OpenCV + MediaPipe</td>
+                <td>NUI</td>
+                <td>Reconocimiento de gestos y seguimiento corporal.</td>
+                <td>Multiplataforma</td>
+              </tr>
+              <tr>
+                <td>Unity</td>
+                <td>VR / AR</td>
+                <td>Desarrollo de apps y juegos inmersivos.</td>
+                <td>Multiplataforma</td>
+              </tr>
+              <tr>
+                <td>WebXR</td>
+                <td>VR / AR</td>
+                <td>Experiencias inmersivas desde el navegador.</td>
+                <td>Web</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p>
+            La clase <code>.u-full-width</code> de Skeleton hace que la tabla ocupe
+            todo el ancho disponible dentro del contenedor.
+          </p>
+
+          <hr>
+        </section>
+
+        <!-- ===== SECCIÓN IMAGEN / MEDIA ===== -->
+        <section>
+          <h2>Ejemplo visual</h2>
+          <p>
+            Aunque este es solo un ejemplo estático, en un proyecto real podríamos
+            mostrar capturas de prototipos VR/AR, flujos de conversación VUI o
+            esquemas de sensores NUI.
+          </p>
+
+          <img class="u-max-full-width"
+               src="imagenes/IMAGEN1.png"
+               alt="Imagen ejemplo de prototipos VR / VUI / NUI">
+
+          <p>
+            La clase <code>.u-max-full-width</code> evita que la imagen se desborde
+            del contenedor y la hace responsiva.
+          </p>
+
+          <hr>
+        </section>
+
+      </div>
+
+      <!-- ================= SIDEBAR ================= -->
+      <aside class="four columns" id="recursos">
+
+        <h3>Acerca del blog</h3>
+        <p>
+          <strong>Blog UX Inmersiva</strong> es un proyecto de práctica para mostrar
+          cómo se puede maquetar una página completa usando sólo el framework
+          <strong>Skeleton</strong> y sus componentes básicos.
+        </p>
+
+        <h4>Categorías</h4>
+        <ul>
+          <li><a href="#vui">Interfaces de Voz (VUI)</a></li>
+          <li><a href="#nui">Interfaces Naturales (NUI)</a></li>
+          <li><a href="#vrar">Realidad Virtual y Aumentada (VR/AR)</a></li>
+        </ul>
+
+        <h4>Checklist de diseño inmersivo</h4>
+        <ul>
+          <li>Definir el contexto de uso.</li>
+          <li>Elegir hardware y herramientas adecuadas.</li>
+          <li>Prototipar rápido y probar con usuarios.</li>
+          <li>Medir usabilidad, accesibilidad y comodidad.</li>
+          <li>Iterar con base en feedback real.</li>
+        </ul>
+
+        <!-- LISTA ANIDADA -->
+        <h5>Prioridades de un proyecto VR/AR</h5>
+        <ul>
+          <li>Experiencia de usuario
+            <ul>
+              <li>Fluidez de interacción</li>
+              <li>Evitar mareos y fatiga</li>
+            </ul>
+          </li>
+          <li>Rendimiento
+            <ul>
+              <li>FPS estables</li>
+              <li>Optimización de modelos 3D</li>
+            </ul>
+          </li>
+        </ul>
+
+        <!-- FORMULARIO PEQUEÑO (BUSCADOR) -->
+        <h4>Buscar en el blog</h4>
+        <form>
+          <label for="busqueda-blog">Palabra clave</label>
+          <input class="u-full-width" type="search" id="busqueda-blog" placeholder="Ej: VUI, VR, gestos">
+          <input class="button u-full-width" type="submit" value="Buscar">
+        </form>
+
+      </aside>
+    </div>
+
+    <!-- ================= BOLETÍN / FORM COMPLETO ================= -->
+    <div class="row" id="boletin">
+      <div class="twelve columns">
+        <hr>
+        <h2>Suscríbete al boletín de UX Inmersiva</h2>
+        <p>
+          Recibe actualizaciones sobre nuevas herramientas, tutoriales y casos de estudio
+          relacionados con VUI, NUI y VR/AR.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="six columns">
+        <form>
+          <label for="nombre">Nombre completo</label>
+          <input class="u-full-width" type="text" id="nombre" placeholder="Tu nombre">
+
+          <label for="correo">Correo electrónico</label>
+          <input class="u-full-width" type="email" id="correo" placeholder="tucorreo@ejemplo.com">
+
+          <label for="tipo-interes">Tipo de interés (menú desplegable)</label>
+          <select class="u-full-width" id="tipo-interes">
+            <option value="">Selecciona una opción</option>
+            <option value="vui">VUI (Interfaces de voz)</option>
+            <option value="nui">NUI (Interfaces naturales)</option>
+            <option value="vrar">VR / AR</option>
+            <option value="todos">Todos los anteriores</option>
+          </select>
+
+          <!-- RADIO BUTTONS -->
+          <label>Frecuencia de envío</label>
+          <label>
+            <input type="radio" name="frecuencia" value="semanal">
+            <span class="label-body">Semanal</span>
+          </label>
+          <label>
+            <input type="radio" name="frecuencia" value="mensual">
+            <span class="label-body">Mensual</span>
+          </label>
+
+          <!-- CHECKBOX -->
+          <label>
+            <input type="checkbox" id="acepto">
+            <span class="label-body">Acepto recibir correos sobre VUI, NUI y VR/AR</span>
+          </label>
+
+          <label for="comentarios">Comentarios o temas que te interesan</label>
+          <textarea class="u-full-width" id="comentarios" placeholder="Describe qué tipo de contenido te gustaría recibir..."></textarea>
+
+          <input class="button-primary" type="submit" value="Suscribirme">
+          <input type="reset" value="Limpiar formulario">
+        </form>
+      </div>
+
+      <div class="six columns" id="contacto">
+        <h3>Contacto rápido</h3>
+        <p>
+          Si estás trabajando en un proyecto de VUI, NUI o VR/AR y quieres compartirlo
+          con la comunidad del blog, puedes escribirnos un mensaje breve:
+        </p>
+        <form>
+          <label for="proyecto">Nombre del proyecto</label>
+          <input class="u-full-width" type="text" id="proyecto" placeholder="Ej: Asistente de voz para laboratorio">
+
+          <label for="url-prototipo">URL del prototipo (opcional)</label>
+          <input class="u-full-width" type="url" id="url-prototipo" placeholder="https://">
+
+          <input class="button u-pull-left" type="submit" value="Enviar idea">
+          <input class="button button-primary u-pull-right" type="button" value="Ver ejemplos publicados">
+        </form>
+        <div class="u-cf"></div> <!-- Limpia los floats de u-pull-left/right -->
+      </div>
+    </div>
+</div>
+</body>
+    <!-- ================= FOOTER ================= -->
+<footer class="footer-transparent">
+  <p>© 2025 Grupo 5 | Project: “Skeleton-Framework”</p><br>
+
+  <div class="social-media">
+    <a href="https://www.facebook.com/" target="_blank" title="Facebook">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384005.png" alt="Facebook">
+    </a>
+    <a href="https://www.instagram.com/" target="_blank" title="Instagram">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384015.png" alt="Instagram">
+    </a>
+    <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" title="Gmail">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384012.png" alt="Gmail">
+    </a>
+    <a href="https://x.com/" target="_blank" title="X">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384017.png" alt="X">
+    </a>
+  </div>
+
+  <p class="final-text">
+    Síguenos en nuestras redes sociales para conocer más sobre nuestros proyectos y actualizaciones. 
+  </p>
+</footer>
+</html>
