@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>EduPlus - Mis Cursos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="imagenes/favicon.png">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <div class="row" style="margin-top: 3rem;">
+      <div class="twelve columns">
+        <h2>Mis cursos</h2>
+        <p>
+          Aquí puedes ver los cursos en los que estás matriculado dentro de EduPlus.
+          Selecciona un curso para acceder a su aula virtual.
+        </p>
+      </div>
+    </div>
+
+    <!-- Navegación simple -->
+    <div class="row">
+      <div class="twelve columns">
+        <a class="button" href="index.html">Inicio</a>
+        <a class="button button-primary" href="cursos.html">Mis cursos</a>
+        <a class="button" href="login.html">Iniciar sesión</a>
+      </div>
+    </div>
+
+    <!-- Filtro simple -->
+    <div class="row" style="margin-top: 2rem;">
+      <div class="six columns">
+        <label for="busqueda">Buscar curso</label>
+        <input class="u-full-width" type="search" id="busqueda" placeholder="Escribe el nombre del curso...">
+      </div>
+      <div class="six columns">
+        <label for="categoria">Filtrar por categoría</label>
+        <select class="u-full-width" id="categoria">
+          <option value="">Todas las categorías</option>
+          <option value="prog">Programación</option>
+          <option value="mat">Matemáticas</option>
+          <option value="idiomas">Idiomas</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Lista de cursos -->
+    <div class="row" style="margin-top: 2rem;">
+      <div class="twelve columns">
+        <table class="u-full-width">
+          <thead>
+            <tr>
+              <th>Curso</th>
+              <th>Docente</th>
+              <th>Progreso</th>
+              <th>Acción</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Introducción a la Programación Web</td>
+              <td>Ing. Laura Pérez</td>
+              <td>45%</td>
+              <td><a class="button button-primary" href="aula.html">Entrar</a></td>
+            </tr>
+            <tr>
+              <td>Cálculo Diferencial</td>
+              <td>Dr. Carlos Gómez</td>
+              <td>60%</td>
+              <td><a class="button" href="aula.html">Entrar</a></td>
+            </tr>
+            <tr>
+              <td>Inglés Básico A1</td>
+              <td>Lic. Ana Torres</td>
+              <td>20%</td>
+              <td><a class="button" href="aula.html">Entrar</a></td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          Esta tabla usa la clase <code>.u-full-width</code> de Skeleton para ocupar todo el ancho disponible y ser responsiva.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</body>
+<footer class="footer-transparent">
+  <p>© 2025 Grupo 5 | Project: “Skeleton-Framework”</p><br>
+
+  <div class="social-media">
+    <a href="https://www.facebook.com/" target="_blank" title="Facebook">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384005.png" alt="Facebook">
+    </a>
+    <a href="https://www.instagram.com/" target="_blank" title="Instagram">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384015.png" alt="Instagram">
+    </a>
+    <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" title="Gmail">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384012.png" alt="Gmail">
+    </a>
+    <a href="https://x.com/" target="_blank" title="X">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384017.png" alt="X">
+    </a>
+  </div>
+
+  <p class="final-text">
+    Síguenos en nuestras redes sociales para conocer más sobre nuestros proyectos y actualizaciones. 
+  </p>
+</footer>
+</html>
+
